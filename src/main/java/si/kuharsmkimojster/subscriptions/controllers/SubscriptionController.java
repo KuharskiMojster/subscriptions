@@ -10,7 +10,7 @@ import si.kuharsmkimojster.subscriptions.model.ResponseModel;
 import si.kuharsmkimojster.subscriptions.model.Subscription;
 
 @RestController
-@RequestMapping("/v1")
+@RequestMapping("/v1/subscription")
 public class SubscriptionController {
 
     @Autowired
@@ -24,7 +24,7 @@ public class SubscriptionController {
         return new ResponseEntity<>(new ResponseModel("Subscription app is running...", HttpStatus.OK.value()), HttpStatus.OK);
     }
 
-    @PostMapping("/subscription")
+    @PostMapping
     public ResponseEntity<ResponseModel> postSubscription(@RequestParam(name = "userId") String userId, @RequestParam(name = "subscriberId") String subscriberId) {
         Subscription subscription = new Subscription(userId, subscriberId);
         String jsonSubscription = Subscription.toJson(subscription);
@@ -32,7 +32,8 @@ public class SubscriptionController {
         return new ResponseEntity<>(new ResponseModel("Subscriber with id: " + subscriberId + " subscribed to user with id: " + userId+".", HttpStatus.OK.value()), HttpStatus.OK);
     }
 
-    private void sendMessage(String msg) {
-        kafkaTemplate.send(kafkaTopic, msg);
+    private void sendMessage(String msg){
+        kafkaTemplate.send(kafkaTopic,  msg);
+
     }
 }
