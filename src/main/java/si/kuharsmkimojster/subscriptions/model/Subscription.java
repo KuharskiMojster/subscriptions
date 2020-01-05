@@ -4,28 +4,28 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class Subscription {
-    private String userId;
-    private String subsriberId;
+    private Long userId;
+    private Long subscriberId;
 
-    public Subscription(String userId, String subsriberId) {
+    public Subscription(Long userId, Long subscriberId) {
         this.userId = userId;
-        this.subsriberId = subsriberId;
+        this.subscriberId = subscriberId;
     }
 
-    public String getUserId() {
+    public Long getUserId() {
         return userId;
     }
 
-    public void setUserId(String userId) {
+    public void setUserId(Long userId) {
         this.userId = userId;
     }
 
-    public String getSubsriberId() {
-        return subsriberId;
+    public Long getSubscriberId() {
+        return subscriberId;
     }
 
-    public void setSubsriberId(String subsriberId) {
-        this.subsriberId = subsriberId;
+    public void setSubscriberId(Long subscriberId) {
+        this.subscriberId = subscriberId;
     }
 
     public static String toJson(Subscription subscription){
