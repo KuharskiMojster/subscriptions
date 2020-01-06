@@ -1,0 +1,6 @@
+/home/lampic/Documents/Programming/GitHub projects/KuharskiMojster.si/subscriptions/src/main/java/si/kuharsmkimojster/subscriptions/controllers/SubscriptionController.java
+/home/lampic/Documents/Programming/GitHub projects/KuharskiMojster.si/subscriptions/src/main/java/si/kuharsmkimojster/subscriptions/model/Subscription.java
+/home/lampic/Documents/Programming/GitHub projects/KuharskiMojster.si/subscriptions/src/main/java/si/kuharsmkimojster/subscriptions/SubscriptionsApplication.java
+/home/lampic/Documents/Programming/GitHub projects/KuharskiMojster.si/subscriptions/src/main/java/si/kuharsmkimojster/subscriptions/model/ResponseModel.java
+/home/lampic/Documents/Programming/GitHub projects/KuharskiMojster.si/subscriptions/src/main/java/si/kuharsmkimojster/subscriptions/kafka/KafkaProducerConfig.java
+/home/lampic/Documents/Programming/GitHub projects/KuharskiMojster.si/subscriptions/src/main/java/si/kuharsmkimojster/subscriptions/kafka/KafkaTopicConfig.java

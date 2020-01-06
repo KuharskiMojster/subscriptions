@@ -8,7 +8,7 @@ EXPOSE 8080
 ARG JAR_FILE=/target/subscriptions-1.0.0-SNAPSHOT.jar
 
 # Add the application's jar to the container
-ADD ${JAR_FILE} recipe-subscriptions.jar
+ADD ${JAR_FILE} subscriptions.jar
 
 # Run the jar file
-ENTRYPOINT ["java","-jar","/recipe-subscriptions.jar"]
+ENTRYPOINT ["java","-jar","/subscriptions.jar"]
