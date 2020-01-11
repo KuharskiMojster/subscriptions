@@ -58,6 +58,11 @@
             <artifactId>spring-boot-starter-actuator</artifactId>
             <version>LATEST</version>
         </dependency>
+        <dependency>
+            <groupId>de.codecentric</groupId>
+            <artifactId>spring-boot-admin-starter-client</artifactId>
+            <version>LATEST</version>
+        </dependency>
     </dependencies>
 
     <build>

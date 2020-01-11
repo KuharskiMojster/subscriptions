@@ -1,6 +1,7 @@
-si/kuharsmkimojster/subscriptions/kafka/KafkaProducerConfig.class
-si/kuharsmkimojster/subscriptions/kafka/KafkaTopicConfig.class
-si/kuharsmkimojster/subscriptions/model/Subscription.class
-si/kuharsmkimojster/subscriptions/model/ResponseModel.class
-si/kuharsmkimojster/subscriptions/SubscriptionsApplication.class
-si/kuharsmkimojster/subscriptions/controllers/SubscriptionController.class
+si\kuharsmkimojster\subscriptions\model\Subscription.class
+si\kuharsmkimojster\subscriptions\model\ResponseModel.class
+si\kuharsmkimojster\subscriptions\kafka\KafkaTopicConfig.class
+si\kuharsmkimojster\subscriptions\controllers\HealthCheckController.class
+si\kuharsmkimojster\subscriptions\SubscriptionsApplication.class
+si\kuharsmkimojster\subscriptions\kafka\KafkaProducerConfig.class
+si\kuharsmkimojster\subscriptions\controllers\SubscriptionController.class
