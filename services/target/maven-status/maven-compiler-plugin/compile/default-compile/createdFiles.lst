@@ -1,0 +1,4 @@
+si\kuharskimojster\kafka\KafkaProducerConfig.class
+si\kuharskimojster\services\RecipeService.class
+si\kuharskimojster\repositories\RecipeRepository.class
+si\kuharskimojster\kafka\KafkaTopicConfig.class
