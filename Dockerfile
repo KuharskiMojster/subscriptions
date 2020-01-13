@@ -5,7 +5,7 @@ FROM adoptopenjdk/openjdk11:latest
 EXPOSE 8080
 
 # The application's jar file
-ARG JAR_FILE=/target/subscriptions-1.0.0-SNAPSHOT.jar
+ARG JAR_FILE=api/target/api-1.0.0-SNAPSHOT.jar
 
 # Add the application's jar to the container
 ADD ${JAR_FILE} subscriptions.jar
