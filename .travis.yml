@@ -8,7 +8,7 @@ env:
   - DOCKER_IMAGE=kuharskimojster/subscriptions:1.0.0-SNAPSHOT-$TRAVIS_JOB_NUMBER
   - secure: Ype4AQ0KrJIVraoKkcAhjGyhqtZwltyJB21GWZQ3tdCipviwG9w0F5N5SSPcTIC9peNEf5/lbSPQKY+s82vK2wVtMLQ2SVwcibCNvjvcy4K2iCIjplBvinixXB2DV/IxTm+SYribkMIVCek9swIN0eoIyGE85hUhLN7jISGetKUQup0SsQ5m7fr4vcE8664BfSP2C8o+r0HXWuqfSBsdmh5M1UKgkFMnJXAYcbwVGWySRMj80juRF2OnzFZ6ETX+ULQ7WCir9pjvArmzM+LiJBN3mKFnlhE5+t7jkkQwR1Ets8U3Shhg2QqChLjp8ksBLE9wYsgIq6PWtOcDRE6esnfaS95XteJbLK7IUg8bjKjkqQt+HdvpV/pnvOk40MY9zkWz4Cza3jXVlQe0WQqDinQuP3pEoG/Hh+LS9kW/BqnObn2/UkKqdX+IwWXW4GQ7VHPJr92TxTHQq9V4lfb6r0w9BVCnDhfgdj52i9VMvGSXPfoBQwlkVad5IgWcw71DjFp8AQpMJp6fLFTwTx5lD4xLT4bCYI5Tz64sMNC/koU3/6YoX5jXHIkAEC0tAsN4O8mD/NKzIozP/2MZ5YECdc+YgOA7SsEulpOqO7B1TB7Hyv9CN6spXXqd9RJvoTj59Oztpmj+uUJ1Ux4JvYHmO0ifPPLRT95Y9sxGAsKHitw=
 script:
-- mvn clean package -U
+- mvn clean package -U -DskipTests=true
 - docker build -t "$DOCKER_IMAGE" .
 after_script:
 - docker images
