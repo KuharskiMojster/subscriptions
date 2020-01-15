@@ -15,5 +15,3 @@ after_script:
 after_success:
 - echo "$REGISTRY_PASS" | docker login -u "$REGISTRY_USER" --password-stdin
 - docker push "$DOCKER_IMAGE"
-before_install:
-- chmod +x mvnw
